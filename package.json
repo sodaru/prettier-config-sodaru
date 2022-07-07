@@ -1,6 +1,6 @@
 {
   "name": "prettier-config-sodaru",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Prettier Config from Sodaru",
   "keywords": [
     "prettier",
@@ -26,7 +26,7 @@
     "build": "node build.js",
     "pretest": "npm run build",
     "test": "npx jest",
-    "prepack": "npm run test",  
+    "prepack": "npm run test",
     "postversion": "git push --follow-tags"
   },
   "peerDependencies": {
