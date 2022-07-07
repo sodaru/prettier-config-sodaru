@@ -1,0 +1,46 @@
+{
+  "name": "prettier-config-sodaru",
+  "version": "0.0.0",
+  "description": "Prettier Config from Sodaru",
+  "keywords": [
+    "prettier",
+    "prettier-config",
+    "code-sanity",
+    "sodaru"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sodaru/prettier-config-sodaru.git"
+  },
+  "author": "Raghavendra K R <raghavendra@sodaru.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sodaru/prettier-config-sodaru/issues"
+  },
+  "homepage": "https://github.com/sodaru/prettier-config-sodaru#readme",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "build": "node build.js",
+    "pretest": "npm run build",
+    "test": "npx jest",
+    "prepack": "npm run test",  
+    "postversion": "git push --follow-tags"
+  },
+  "peerDependencies": {
+    "prettier": "^2.3.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.8",
+    "@babel/preset-env": "^7.14.8",
+    "@types/jest": "^26.0.24",
+    "ajv": "^8.6.2",
+    "babel-jest": "^27.0.6",
+    "jest": "^27.0.6",
+    "js-yaml": "^4.1.0",
+    "json-schema-migrate": "^2.0.0",
+    "prettier": "^2.3.2"
+  }
+}
